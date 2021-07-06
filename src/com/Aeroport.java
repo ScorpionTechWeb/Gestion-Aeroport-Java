@@ -6,19 +6,19 @@ public class Aeroport {
     /** Atribut **/
     private String lieu;
     private int capacite;
-    private ArrayList<Avion> avion;
-    private ArrayList<Billet> billet;
+    private ArrayList<Avion> avions;
+    private ArrayList<Billet> billets;
 
     /** Constructeurs **/
     public Aeroport(String lieu, int capacite) {
         this.lieu = lieu;
         this.capacite = capacite;
-        this.avion = new ArrayList<>();
-        this.billet = new ArrayList<>();
+        this.avions = new ArrayList<>();
+        this.billets = new ArrayList<>();
     }
 
     /** méthodes **/
-    public Avion addToAvions() {
+    public void addToAvions() {
 
     }
     public Avion showDispoAvion() {
@@ -30,17 +30,12 @@ public class Aeroport {
     public void ShowNbPlaceByPlane() {
 
     }
-    public ArrayList<Avion> getAvion() {
-        return avion;
-    }
-    public ArrayList<Billet> getBillet() {
-        return billet;
-    }
 
     /** getters and setters **/
     public String getLieu() {
         return lieu;
     }
+
     public void setLieu(String lieu) {
         this.lieu = lieu;
     }
@@ -48,7 +43,24 @@ public class Aeroport {
     public int getCapacite() {
         return capacite;
     }
+
     public void setCapacite(int capacite) {
         this.capacite = capacite;
+    }
+
+    public ArrayList<Avion> getAvion() {
+        return avions;
+    }
+
+    public void setAvions(ArrayList<Avion> avions) {
+        this.avions = avions;
+    }
+
+    public ArrayList<Billet> getBillet() {
+        return billets;
+    }
+
+    public void setBillet(ArrayList<Billet> billet) {
+        this.billets = billet;
     }
 }

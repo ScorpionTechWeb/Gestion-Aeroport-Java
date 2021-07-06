@@ -6,15 +6,14 @@ abstract class Avion {
     protected String modele;
     protected int nbPlaces;
     protected int distanceMax;
-    protected Boolean volSol;
+    protected Boolean volSol = false;
     protected ArrayList<Traveler> traveler;
 
     /** constructeurs **/
-    protected Avion(String modele, int nbPlaces, int distanceMax, Boolean volSol) {
+    protected Avion(String modele, int nbPlaces, int distanceMax) {
         this.modele = modele;
         this.nbPlaces = nbPlaces;
         this.distanceMax = distanceMax;
-        this.volSol = volSol;
         this.traveler = new ArrayList<>();
     }
 

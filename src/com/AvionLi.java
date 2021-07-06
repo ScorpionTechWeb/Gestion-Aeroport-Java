@@ -7,10 +7,9 @@ public class AvionLi extends Avion {
      * @param modele
      * @param nbPlaces
      * @param distanceMax
-     * @param volSol
      **/
-    protected AvionLi(String modele, int nbPlaces, int distanceMax, Boolean volSol) {
-        super(modele, nbPlaces, distanceMax, volSol);
+    protected AvionLi(String modele, int nbPlaces, int distanceMax) {
+        super(modele, nbPlaces, distanceMax);
     }
 
     @Override
