@@ -24,7 +24,7 @@ public class AvionLi extends Avion {
 
     @Override
     String getModele() {
-        return null;
+        return modele;
     }
 
     @Override

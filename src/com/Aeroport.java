@@ -18,15 +18,17 @@ public class Aeroport {
     }
 
     /** méthodes **/
-    public void addToAvions() {
-
+    public void addToAvions(Avion avion) {
+        this.avions.add(avion);
     }
-    public Avion showDispoAvion() {
-
+    public void showDispoAvion() {
+        for (Avion avion : avions){
+            System.out.println(avion.getModele());
+        }
     }
-    public Billet editBillet() {
-
-    }
+    //    public Billet editBillet() {
+//
+//    }
     public void ShowNbPlaceByPlane() {
 
     }

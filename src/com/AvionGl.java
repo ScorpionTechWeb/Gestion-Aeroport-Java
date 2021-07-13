@@ -24,7 +24,7 @@ public class AvionGl extends Avion {
 
     @Override
     String getModele() {
-        return null;
+        return modele;
     }
 
     @Override
